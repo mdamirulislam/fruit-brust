@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FruitBrust</title>
+    <!-- DaysiUi And TailWind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d99d766fa1.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>hello</h1>
+    <!-- header -->
+    <header class="max-w-7xl mx-auto ">
+        <div class="ms-4 md:ms-0  lg:bg-red-500 lg:py-10 rounded-full">
+            <div class="navbar">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                      <li class="mr-8 lg:text-white font-bold"><a>Home</a></li>
+                      <li class="mr-8 lg:text-white font-bold"><a>About Us</a></li>
+                      <li class="mr-8 lg:text-white font-bold"><a>Shop</a></li>
+                      <li class="mr-8 lg:text-white font-bold"><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  <!-- small devise part -->
+              <div class="flex justify-between gap-30 flex-row-reverse md:flex-none">
+                <div class="md:navbar-start navbar-end ms-8 md:ms-0 md:me-4 lg:me-0">
+                    <div class="dropdown">
+                      <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li>
+                          <a>Parent</a>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="btn btn-ghost normal-case lg:mr-52 flex md:items-center items-start lg:mb-5">
+                      <img src="./image/logo.png" alt="">
+                      <span class="text-3xl md:text-4xl lg:text-white">Fruit Burst</span>
+                  </a>
+              </div>
+                <div class=" navbar-end hidden md:inline-block">
+                    <input type="text" placeholder="Search here" class="input bg-white input-bordered  md:w-[400px] max-w-xs rounded-full" />
+                </div>
+              </div>
+        </div>
+    </header>
 </body>
+
 </html>
