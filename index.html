@@ -25,8 +25,8 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header class="max-w-7xl mx-auto my-10 px-6 lg:px-0">
+    <header class="container mx-auto">
+        <!-- Nav  -->
         <div class="ms-4 md:ms-0  lg:bg-red-500 lg:py-5 rounded-full">
             <div class="navbar">
                 <div class="navbar-center hidden lg:flex">
@@ -38,7 +38,7 @@
                     </ul>
                 </div>
                 <!-- small devise part -->
-                <div class="flex justify-between gap-30 flex-row-reverse md:flex-none">
+                <div class="flex justify-between gap-30 flex-row md:flex-none">
                     <div class="md:navbar-start navbar-end ms-8 md:ms-0 md:me-4 lg:me-0">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -50,275 +50,175 @@
                             </label>
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Item 1</a></li>
-                                <li>
-                                    <a>Parent</a>
-                                    <ul class="p-2">
-                                        <li><a>Submenu 1</a></li>
-                                        <li><a>Submenu 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a>Item 3</a></li>
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
                             </ul>
                         </div>
                     </div>
-                    <a class="btn btn-ghost normal-case lg:mr-52 flex md:items-center items-start lg:mb-5">
+                    <a class="btn btn-ghost normal-case lg:ms-52 flex md:items-center items-start lg:mb-5">
                         <img src="./image/logo.png" alt="">
                         <span class="text-3xl md:text-4xl lg:text-white">Fruit Burst</span>
                     </a>
                 </div>
                 <div class=" navbar-end hidden md:inline-block">
-                    <div class="relative">
+                    <div class="relative lg:ms-40">
                         <input type="text" placeholder="Search here"
-                            class="input  bg-white input-bordered  md:w-[400px] max-w-xs rounded-full" />
+                            class="input  bg-white input-bordered  md:w-[400px] rounded-full" />
                         <i
                             class="fa-solid fa-magnifying-glass absolute top-3 right-9 text-black text-xl hidden lg:inline"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- banner -->
-        <div class="mt-20">
-            <!-- parent div -->
-            <div class="relative">
-                <!-- mobile size banner container  -->
-                <div class="carousel md:w-full rounded">
-                    <div id="slide1" class="carousel-item relative w-full">
-                        <!-- <img src="./image/banner1.png" class="w-full" /> -->
-                        <div class="hero h-[500px]" style="background-image: url(./image/banner1.png);">
-                            <div class="hero-overlay bg-opacity-60"></div>
-                            <div class="hero-content text-center text-neutral-content">
-                                <div class="">
-                                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                    <p class="mb-5">We supply highly quality organic products</p>
-                                    <button class="btn btn-error text-white">Shop Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide4" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide2" class="carousel-item relative w-full">
-                        <div class="hero h-[500px]" style="background-image: url(./image/banner2.png);">
-                            <div class="hero-overlay bg-opacity-60"></div>
-                            <div class="hero-content text-center text-neutral-content">
-                                <div class="">
-                                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                    <p class="mb-5">We supply highly quality organic products</p>
-                                    <button class="btn btn-error text-white">Shop Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide3" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide3" class="carousel-item relative w-full">
-                        <div class="hero h-[500px]" style="background-image: url(./image/banner3.png);">
-                            <div class="hero-overlay bg-opacity-60"></div>
-                            <div class="hero-content text-center text-neutral-content">
-                                <div class="">
-                                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                    <p class="mb-5">We supply highly quality organic products</p>
-                                    <button class="btn btn-error text-white">Shop Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide2" class="btn btn-circle">❮</a>
-                            <a href="#slide4" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide4" class="carousel-item relative w-full">
-                        <div class="hero h-[500px]" style="background-image: url(./image/banner4.png);">
-                            <div class="hero-overlay bg-opacity-60"></div>
-                            <div class="hero-content text-center text-neutral-content">
-                                <div class="">
-                                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
-                                    <p class="mb-5">We supply highly quality organic products</p>
-                                    <button class="btn btn-error text-white">Shop Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide3" class="btn btn-circle">❮</a>
-                            <a href="#slide1" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fruit cards -->
-                <div class="hidden lg:block">
-                    <div class="flex w-[1100px] mx-auto shadow-lg absolute left-20 -bottom-36">
-                        <div class=" bg-base-100 ">
-                            <figure class="px-10 pt-10">
-                                <img src="./image/fruit1.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                            </div>
-                        </div>
-                        <div class=" bg-base-100 ">
-                            <figure class="px-10 pt-10">
-                                <img src="./image/fruit2.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                            </div>
-                        </div>
-                        <div class=" bg-base-100 ">
-                            <figure class="px-10 pt-10">
-                                <img src="./image/fruit3.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                            </div>
-                        </div>
-                        <div class=" bg-base-100 ">
-                            <figure class="px-10 pt-10">
-                                <img src="./image/fruit4.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                            </div>
-                        </div>
-                        <div class=" bg-base-100 ">
-                            <figure class="px-10 pt-10">
-                                <img src="./image/fruit5.png" alt="Shoes" class="rounded-xl" />
-                            </figure>
-                            <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- banner section -->
+      <!-- carousel -->
+ <div class="relative mt-10">
+    <div class="carousel w-full rounded ">
+        <div id="slide1" class="carousel-item relative w-full h-[300px] md:h-[570px]">
+          <div class="hero" style="background-image: url('./image/banner1.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div>
+                <div class="flex justify-center"><img src="./images/client.png" alt=""></div>
+               
+                <h1 class="mb-5 text-4xl font-bold custom-font mt-4">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-primaryColor text-white border-none text-[10px] md:text-[20]">Shop Now</button>
+              </div>
             </div>
-        </div>
-    </header>
-
-    <!-- Deal of the day -->
-    <section class="container mx-auto flex justify-center mt-96">
-
-        <!-- <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row">
-                    <div class="md:p-40 md:ps-0 mb-4 lg:mb-0 text-center lg:text-start">
-                        <h2 class="text-5xl mb-4 font-extrabold">Deal of the day</h2>
-                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
-                            literature from 45 BC, making it over 2000 years old.</p>
-                    </div>
-                  <div>
-                    <div>
-                        <div class="grid grid-flow-col gap-5 text-center auto-cols-max w-full ">
-                            <div class="flex flex-col">
-                                <span class="countdown font-mono text-5xl">
-                                    <span style="--value:15;"></span>:
-                                </span>
-                                days
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="countdown font-mono text-5xl">
-                                    <span style="--value:10;"></span>:
-                                </span>
-                                hours
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="countdown font-mono text-5xl">
-                                    <span style="--value:24;"></span>:
-                                </span>
-                                min
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="countdown font-mono text-5xl">
-                                    <span style="--value:10;"></span>:
-                                </span>
-                                sec
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full h-[300px] md:h-[570px]">
+          <div class="hero" style="background-image: url('./image/banner2.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div>
+                    <div class="flex justify-center"><img src="./images/client.png" alt=""></div>
+                   
+                    <h1 class="mb-5 text-4xl font-bold custom-font mt-4">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-primaryColor text-white border-none">Shop Now</button>
                   </div>
-                </div>
-              </div> -->
-        <div>
-            <!-- Open the modal using ID.showModal() method -->
-
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                    <img src="./image/fruit6.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center space-y-4">
-                    <h2 class="card-title border-b pb-4 text-3xl font-bold">12.90$ - 18.85$</h2>
-                    <p class="text-gray-400">Apples</p>
-                    <div class="rating rating-lg rating-half">
-                        <input type="radio" name="rating-10" class="rating-hidden" />
-                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
-                            checked />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                    </div>
-                    <div class="card-actions">
-                        <button class="text-primaryColor font-bold" onclick="my_modal_1.showModal()">Details</button>
-                    </div>
-                </div>
             </div>
-            <!-- model 1 -->
-            <dialog id="my_modal_1" class="modal">
-                <form method="dialog" class="modal-box">
-                    <div class="">
-                        <figure class="px-10 pt-10">
-                            <img src="./image/fruit6.png" alt="Shoes" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center space-y-4">
-                            <h2 class="card-title border-b pb-4 text-3xl font-bold">12.90$ - 18.85$</h2>
-                            <p class="text-gray-400">Apples</p>
-                            <div class="rating rating-lg rating-half">
-                                <input type="radio" name="rating-10" class="rating-hidden" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#F85559] mask mask-star-2 mask-half-1" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#F85559] mask mask-star-2 mask-half-2" />
-                                <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
-                                    checked />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-1" />
-                                <input type="radio" name="rating-10"
-                                    class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full h-[300px] md:h-[570px]">
+          <div class="hero" style="background-image: url('./image/banner3.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div>
+                    <div class="flex justify-center"><img src="./images/client.png" alt=""></div>
+                   
+                    <h1 class="mb-5 text-4xl font-bold custom-font mt-4">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-primaryColor text-white border-none">Shop Now</button>
+                  </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full h-[300px] md:h-[570px]">
+          <div class="hero" style="background-image: url('./image/banner4.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+             <div>
+                <div class="flex justify-center"><img src="./images/client.png" alt=""></div>
+               
+                <h1 class="mb-5 text-4xl font-bold custom-font mt-4">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-primaryColor text-white border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+    </div>
+        <!--  -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    <!-- Fruit cards -->
+                    <div class="hidden lg:block">
+                        <div class="flex w-[1100px] mx-auto shadow-lg absolute left-52 -bottom-36">
+                            <div class=" bg-base-100 ">
+                                <figure class="px-10 pt-10">
+                                    <img src="./image/fruit1.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Shoes!</h2>
+                                </div>
                             </div>
-                            <div class="card-actions">
-                                <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn border border-primaryColor bg-transparent text-primaryColor">Close
-                                    </button>
-                                        <button class="btn bg-primaryColor text-white">By Now</button>
-
+                            <div class=" bg-base-100 ">
+                                <figure class="px-10 pt-10">
+                                    <img src="./image/fruit2.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Shoes!</h2>
+                                </div>
+                            </div>
+                            <div class=" bg-base-100 ">
+                                <figure class="px-10 pt-10">
+                                    <img src="./image/fruit3.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Shoes!</h2>
+                                </div>
+                            </div>
+                            <div class=" bg-base-100 ">
+                                <figure class="px-10 pt-10">
+                                    <img src="./image/fruit4.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Shoes!</h2>
+                                </div>
+                            </div>
+                            <div class=" bg-base-100 ">
+                                <figure class="px-10 pt-10">
+                                    <img src="./image/fruit5.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Shoes!</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
+    
+ </div>
 
-                </form>
-            </dialog>
-        </div>
-    </section>
 
+
+
+
+
+
+
+
+
+
+ 
+    </header>
 </body>
 
 </html>
